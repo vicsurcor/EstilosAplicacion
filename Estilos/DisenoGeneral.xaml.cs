@@ -10,27 +10,26 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Estilos
 {
     /// <summary>
-    /// Lógica de interacción para MainWindow.xaml
+    /// Lógica de interacción para Window1.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class DisenoGeneral : Window
     {
-        public MainWindow()
+        public DisenoGeneral()
         {
             InitializeComponent();
         }
 
-        public void IrADisenoGeneral(object sender, RoutedEventArgs args)
+        public void VolverAlMenu(object sender, RoutedEventArgs args)
         {
 
-            DisenoGeneral diseno = new DisenoGeneral();
+            MainWindow mainWindow = new MainWindow();
             this.Close();
-            diseno.Show();
+            mainWindow.Show();
 
         }
     }

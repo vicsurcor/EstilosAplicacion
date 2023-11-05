@@ -16,7 +16,6 @@
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="HorizontalAlignment" Value="Left"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
-            <Setter Property="Margin" Value="0,299,0,271"/>
             <Setter Property="BorderThickness" Value="2"/>
 
         </Style>
@@ -115,7 +114,7 @@
         <Grid Grid.Row="2" Panel.ZIndex="1">
 
             <Border Style="{StaticResource Usuario}">
-                <Button Style="{StaticResource BotonUsuario}">
+                <Button Click="IrADisenoGeneral" Style="{StaticResource BotonUsuario}">
                     <Image></Image>
                 </Button>
             </Border>
